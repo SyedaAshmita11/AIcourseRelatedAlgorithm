@@ -1,10 +1,7 @@
 # Dijkstra's Algorithm - Shortest route from one place to all others
-# Same road map is used in all three files (distance in km).
-# No library used.
 
 INF = 999999
 
-# Road map: place -> list of (neighbor, distance)
 graph = {
     "University":  [("Bus Stand", 3), ("Market", 5)],
     "Bus Stand":   [("University", 3), ("Market", 2), ("Launch Ghat", 6)],
@@ -25,7 +22,7 @@ def dijkstra(graph, source):
     dist[source] = 0
 
     for _ in range(len(graph)):
-        # pick unvisited place with smallest distance
+        
         current = None
         for place in graph:
             if not visited[place]:
