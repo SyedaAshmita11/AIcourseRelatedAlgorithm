@@ -1,6 +1,3 @@
-# Kruskal's Algorithm - Cheapest road network connecting all places
-# Same road map is used in all three files (distance in km = road length to build).
-# No library used.
 
 places = ["University", "Bus Stand", "Market", "Hospital", "Launch Ghat"]
 
