@@ -1,7 +1,7 @@
 
 places = ["University", "Bus Stand", "Market", "Hospital", "Launch Ghat"]
 
-# Each road is listed once: (place1, place2, length)
+
 roads = [
     ("University", "Bus Stand", 3),
     ("University", "Market", 5),
@@ -24,7 +24,7 @@ def sort_roads(roads):
     return roads
 
 
-# ----- Union-Find: tells if two places are already connected -----
+
 def find(parent, x):
     while parent[x] != x:
         x = parent[x]
@@ -34,7 +34,7 @@ def find(parent, x):
 def union(parent, a, b):
     ra, rb = find(parent, a), find(parent, b)
     if ra == rb:
-        return False   # already connected -> cycle, skip this road
+        return False  
     parent[rb] = ra
     return True
 
